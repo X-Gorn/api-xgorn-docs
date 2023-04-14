@@ -6,8 +6,11 @@
 
 ### Ouo Bypass:
 Path: /ouo_bypass
+
 Method: GET
+
 Arguments: url
+
 Example:
 ```
 import requests
@@ -24,8 +27,11 @@ print(json)
 
 ### Mirrored Bypass:
 Path: /mirrored_bypass
+
 Method: GET
+
 Arguments: url, host
+
 Example:
 ```
 import requests
