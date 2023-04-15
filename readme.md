@@ -46,3 +46,45 @@ get = requests.get('https://api.xgorn.tech/mirrored_bypass', params=params)
 json = get.json()
 print(json)
 ```
+
+### Tiktok Scrape:
+Path: /tiktok_scrape
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://www.tiktok.com/@0906yu_rin/video/7103872167225363713?_r=1'
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/tiktok_scrape', params=params)
+json = get.json()
+print(json)
+```
+
+### Facebook Scrape:
+Path: /facebook_scrape
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://www.facebook.com/kreatifpandaindo/videos/917251239418859/?mibextid=JgRRn7n7jRVACbyL'
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/facebook_scrape', params=params)
+json = get.json()
+print(json)
+```
