@@ -88,3 +88,24 @@ get = requests.get('https://api.xgorn.tech/facebook_scrape', params=params)
 json = get.json()
 print(json)
 ```
+
+### Instagram Scrape:
+Path: /instagram_scrape
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://www.instagram.com/reel/CqcUdr-ppgT/?igshid=YmMyMTA2M2Y='
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/instagram_scrape', params=params)
+json = get.json()
+print(json)
+```
