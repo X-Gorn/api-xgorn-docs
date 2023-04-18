@@ -109,3 +109,24 @@ get = requests.get('https://api.xgorn.tech/instagram_scrape', params=params)
 json = get.json()
 print(json)
 ```
+
+### Twitter Scrape:
+Path: /twitter_scrape
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://twitter.com/TheRundownAI/status/1645291024367878144?s=20'
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/twitter_scrape', params=params)
+json = get.json()
+print(json)
+```
