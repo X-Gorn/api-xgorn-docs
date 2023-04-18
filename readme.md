@@ -130,3 +130,66 @@ get = requests.get('https://api.xgorn.tech/twitter_scrape', params=params)
 json = get.json()
 print(json)
 ```
+
+### Likee Scrape:
+Path: /likee_scrape
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://likee.video/@MEKDede/video/7199606118785777185'
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/likee_scrape', params=params)
+json = get.json()
+print(json)
+```
+
+### Pinterest Scrape:
+Path: /pinterest_scrape
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://id.pinterest.com/pin/738942251365909955/'
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/pinterest_scrape', params=params)
+json = get.json()
+print(json)
+```
+
+### Pinterest Scrape v2:
+Path: /pinterest_scrapev2
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://id.pinterest.com/pin/738942251365909955/'
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/pinterest_scrapev2', params=params)
+json = get.json()
+print(json)
+```
