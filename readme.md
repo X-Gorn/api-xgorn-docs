@@ -110,6 +110,27 @@ json = get.json()
 print(json)
 ```
 
+### Instagram Scrape v2:
+Path: /instagram_scrapev2
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://www.instagram.com/reel/CqcUdr-ppgT/?igshid=YmMyMTA2M2Y='
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/instagram_scrapev2', params=params)
+json = get.json()
+print(json)
+```
+
 ### Twitter Scrape:
 Path: /twitter_scrape
 
@@ -127,6 +148,27 @@ url = 'https://twitter.com/TheRundownAI/status/1645291024367878144?s=20'
 params = {'api_key': api_key, 'url': url}
 
 get = requests.get('https://api.xgorn.tech/twitter_scrape', params=params)
+json = get.json()
+print(json)
+```
+
+### Twitter Scrape v2:
+Path: /twitter_scrapev2
+
+Method: GET
+
+Arguments: url
+
+Example:
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://twitter.com/TheRundownAI/status/1645291024367878144?s=20'
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/twitter_scrapev2', params=params)
 json = get.json()
 print(json)
 ```
