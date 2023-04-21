@@ -5,6 +5,7 @@
 ## [Register](https://api.xgorn.tech/register)
 
 ### Ouo Bypass:
+
 Path: /ouo_bypass
 
 Method: GET
@@ -12,6 +13,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -26,6 +28,7 @@ print(json)
 ```
 
 ### Mirrored Bypass:
+
 Path: /mirrored_bypass
 
 Method: GET
@@ -33,6 +36,7 @@ Method: GET
 Arguments: url, host
 
 Example:
+
 ```
 import requests
 
@@ -48,6 +52,7 @@ print(json)
 ```
 
 ### Tiktok Scrape:
+
 Path: /tiktok_scrape
 
 Method: GET
@@ -55,6 +60,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -69,6 +75,7 @@ print(json)
 ```
 
 ### Facebook Scrape:
+
 Path: /facebook_scrape
 
 Method: GET
@@ -76,6 +83,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -90,6 +98,7 @@ print(json)
 ```
 
 ### Instagram Scrape:
+
 Path: /instagram_scrape
 
 Method: GET
@@ -97,6 +106,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -111,6 +121,7 @@ print(json)
 ```
 
 ### Instagram Scrape v2:
+
 Path: /instagram_scrapev2
 
 Method: GET
@@ -118,6 +129,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -132,6 +144,7 @@ print(json)
 ```
 
 ### Twitter Scrape:
+
 Path: /twitter_scrape
 
 Method: GET
@@ -139,6 +152,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -153,6 +167,7 @@ print(json)
 ```
 
 ### Twitter Scrape v2:
+
 Path: /twitter_scrapev2
 
 Method: GET
@@ -160,6 +175,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -174,6 +190,7 @@ print(json)
 ```
 
 ### Likee Scrape:
+
 Path: /likee_scrape
 
 Method: GET
@@ -181,6 +198,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -195,6 +213,7 @@ print(json)
 ```
 
 ### Pinterest Scrape:
+
 Path: /pinterest_scrape
 
 Method: GET
@@ -202,6 +221,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -216,6 +236,7 @@ print(json)
 ```
 
 ### Pinterest Scrape v2:
+
 Path: /pinterest_scrapev2
 
 Method: GET
@@ -223,6 +244,7 @@ Method: GET
 Arguments: url
 
 Example:
+
 ```
 import requests
 
@@ -232,6 +254,31 @@ url = 'https://id.pinterest.com/pin/738942251365909955/'
 params = {'api_key': api_key, 'url': url}
 
 get = requests.get('https://api.xgorn.tech/pinterest_scrapev2', params=params)
+json = get.json()
+print(json)
+```
+
+### SRT Translate:
+
+Path: /srt_translate
+
+Method: GET
+
+Arguments: url, source_lang, dest_lang
+
+Example:
+
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://kopp.iamidiotareyoutoo.com/stream/load.m3u8/BQACAgQAAx0EZby4OgAC6udkQuerRRPpyHJfAAHQsRRx_UypmboAArkQAAI_sBBS3pl9X9RsK-IvBA/video.srt'
+source_lang = 'english'
+dest_lang = 'indonesian'
+
+params = {'api_key': api_key, 'url': url, 'source_lang': source_lang, 'dest_lang': dest_lang}
+
+get = requests.get('https://api.xgorn.tech/srt_translate', params=params)
 json = get.json()
 print(json)
 ```
