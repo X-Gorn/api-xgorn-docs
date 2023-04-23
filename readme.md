@@ -282,3 +282,26 @@ get = requests.get('https://api.xgorn.tech/srt_translate', params=params)
 json = get.json()
 print(json)
 ```
+
+### Terabox Scrape:
+
+Path: /terabox_scrape
+
+Method: GET
+
+Arguments: url
+
+Example:
+
+```
+import requests
+
+api_key = 'your_api_key'
+url = 'https://terabox.com/s/1PFVoK8dZyRrnDId3dujieg'
+
+params = {'api_key': api_key, 'url': url}
+
+get = requests.get('https://api.xgorn.tech/terabox_scrape', params=params)
+json = get.json()
+print(json)
+```
